@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using MoreLinq;
 using ProductParserIL.Domain.Parsers.Asos;
 
 namespace ProductParserIL
@@ -12,7 +13,7 @@ namespace ProductParserIL
             try
             {
                 var catParser = new AsosCategoryParser();
-                var cats = await catParser.Read().ToListAsync();
+                var cats = (await catParser.Read().ToListAsync()).DistinctBy(x => x.Url.LocalPath).ToList();
             }
             catch (Exception e)
             {
