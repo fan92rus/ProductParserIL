@@ -2,7 +2,7 @@
 {
     public class Characteristic
     {
-        public ValueDto Value { get; set; }
+        public Feature Value { get; set; }
         public string Name { get; set; }
     }
 }

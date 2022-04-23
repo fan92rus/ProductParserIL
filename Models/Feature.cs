@@ -1,6 +1,6 @@
 ﻿namespace Models
 {
-    public class ValueDto
+    public class Feature
     {
         public double Value { get; set; }
         public Unit Unit { get; set; }

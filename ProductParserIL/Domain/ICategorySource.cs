@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using ProductParserIL.Models;
+using Models;
 
 namespace ProductParserIL.Domain
 {

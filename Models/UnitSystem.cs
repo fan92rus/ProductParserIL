@@ -2,6 +2,7 @@
 {
     public enum UnitSystem
     {
-
+        Imperial,
+        Euro
     }
 }

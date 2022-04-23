@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using AngleSharp.Html.Dom;
+using Models;
 using ProductParserIL.Helpers;
-using ProductParserIL.Models;
 using RestSharp;
 
 namespace ProductParserIL.Domain.Parsers.Asos
