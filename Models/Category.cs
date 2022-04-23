@@ -1,7 +1,6 @@
 ﻿using System;
-using ProductParserIL.Helpers;
 
-namespace ProductParserIL.Models
+namespace Models
 {
     public class Category : TreeNode<string, Category>
     {

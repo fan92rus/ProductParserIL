@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
 
-namespace ProductParserIL.Helpers
+namespace Models
 {
     public abstract class TreeNode<TKey, TNode> : ITreeNode<TKey, TNode>
         where TNode : class, ITreeNode<TKey, TNode>

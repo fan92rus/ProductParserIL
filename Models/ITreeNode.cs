@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProductParserIL.Helpers
+namespace Models
 {
     public interface ITreeNode<TKey, TNode> where TNode : ITreeNode<TKey, TNode>
     {

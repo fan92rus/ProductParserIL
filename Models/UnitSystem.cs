@@ -1,4 +1,4 @@
-﻿namespace ProductParserIL.Models
+﻿namespace Models
 {
     public enum UnitSystem
     {
