@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProductParserIL
+namespace ProductParserIL.Models
 {
     public class Product
     {

@@ -1,4 +1,4 @@
-﻿namespace ProductParserIL
+﻿namespace ProductParserIL.Models
 {
     public class ValueDto
     {

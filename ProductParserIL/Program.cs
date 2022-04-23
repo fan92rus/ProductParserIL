@@ -1,23 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ProductParserIL.Domain.Parsers.Asos;
 
 namespace ProductParserIL
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        static async Task Main()
         {
+            try
+            {
+                var catParser = new AsosCategoryParser();
+                var cats = await catParser.Read().ToListAsync();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
             Console.WriteLine("Hello World!");
         }
-    }
-
-    public interface ICategorySource
-    {
-        public IEnumerable<Category> Read();
-    }
-
-    public interface IProductSource
-    {
-        public IEnumerable<Product> Read();
     }
 }
